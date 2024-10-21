@@ -8,3 +8,9 @@ SELECT
     MAX(price) AS max_price, 
     MIN(price) AS min_price
 FROM mydb.products;
+
+/* p3 */
+SELECT DISTINCT category_id, price
+FROM mydb.products
+ORDER BY price DESC
+LIMIT 10;
